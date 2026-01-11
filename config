@@ -134,7 +134,7 @@ bindsym $mod+r mode "resize"
 # -------------------------------------------------
 
 bar {
-    status_command ~/.config/i3/i3status.conf
+    status_command i3status -c ~/.config/i3/i3status.conf
 }
 
 # -------------------------------------------------
@@ -163,3 +163,5 @@ bindsym $mod+v exec --no-startup-id copyq toggle
 
 # Disable accidental key
 bindsym Mod1+period nop
+
+bindsym $mod+Shift+r reload
